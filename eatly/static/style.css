@@ -1,0 +1,13 @@
+:root {
+    --beige: #efe7d4;
+    --tan: #cdbfa5;
+    --dark_brown: #282a1f;
+}
+
+body {
+    background-color: var(--tan);
+}
+
+.container {
+    background-color: var(--beige);
+}
