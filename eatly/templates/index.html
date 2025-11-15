@@ -1,67 +1,83 @@
+<!-- This tells Flask: "Use base.html as my template" -->
+<!-- So this page automatically gets the navbar and footer! -->
 {% extends "base.html" %}
 
+
+<!-- Set the page title (appears in browser tab) -->
 {% block title %}Eatly - Find Your Perfect Meal{% endblock %}
 
 {% block content %}
+    <section class="hero">
+        <div class="hero-content">
+            <!-- Big emoji/icon (you can replace with an image later) -->
+            <div class="hero-emoji">🍽️</div>
 
-<!-- Hero Section -->
-<section class="hero">
-    <div class="hero-content">
-        <h1>Food That Fits Your Mood</h1>
-        <p class="tagline">
-            Discover personalised meal suggestions based on your mood, cravings, 
-            or the ingredients you already have. Join our community to share recipes, 
-            explore what others are cooking, and request home-cooked meals from nearby users.
-        </p>
-        <div class="cta-buttons">
-            <a href="/recommendations" class="btn btn-primary">Get Meal Ideas</a>
-            <a href="/community" class="btn btn-secondary">Join the Community</a>
-        </div>
-    </div>
-</section>
+            <!-- Main heading with Eatly's tagline -->
+            <h1>Eatly - Food That Fits Your Mood</h1>
 
-<!-- Feature Section -->
-<section class="features">
-    <h2>What Makes Eatly Special?</h2>
-    <div class="feature-grid">
-        <div class="feature-card">
-            <div class="feature-icon">
-                <span style="color: var(--olive); font-weight: bold;">MOOD</span>
-            </div>
-            <h3>Food That Fits Your Mood</h3>
-            <p>
-                Feeling happy? Stressed? Adventurous? Tell us your mood and we'll 
-                suggest the perfect meal to match how you're feeling right now.
+            <!-- Tagline/description -->
+            <p class="tagline">
+                Discover personalised meal suggestions based on your mood, cravings, 
+                or the ingredients you already have. Join our community to share recipes, 
+                explore what others are cooking, and even request home-cooked meals from nearby users!
             </p>
-        </div>
-        <div class="feature-card">
-            <div class="feature-icon">
-                <span style="color: var(--olive); font-weight: bold;">COOK</span>
-            </div>
-            <h3>Use What You Have</h3>
-            <p>
-                Got random ingredients in your fridge? Input what you have and 
-                get creative meal ideas that make the most of your ingredients.
-            </p>
-        </div>
-        <div class="feature-card">
-            <div class="feature-icon">
-                <span style="color: var(--olive); font-weight: bold;">SHARE</span>
-            </div>
-            <h3>Community & Home Cooking</h3>
-            <p>
-                Share your culinary creations, discover recipes from others, 
-                and request delicious home-cooked meals from talented cooks nearby.
-            </p>
-        </div>
-    </div>
-</section>
 
-<!-- CTA Section -->
-<section class="cta-section">
-    <h2>Ready to Find Your Perfect Meal?</h2>
-    <p>Whether you're happy, stressed, or just hungry - we've got you covered</p>
-    <a href="/recommendations" class="btn btn-primary">Discover Meals for Your Mood</a>
-</section>
+            <!-- Call-to-action buttons -->
+            <div class="cta-buttons">
+                <!-- Primary button - goes to meal recommendations page -->
+                <a href="/ask_page" class="btn btn-primary">Get Meal Ideas</a>
+
+                <!-- Secondary button - goes to community page -->
+                <a href="/community" class="btn btn-secondary">Join the Community</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Section-->
+    <section class="features">
+        <h2>What Makes Eatly Special?</h2>
+
+        <!-- Grid of 3 feature cards -->
+        <div class="feature-grid">
+
+            <!-- Feature 1: AI Meal Suggestions -->
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+                <h3>Smart Meal Suggestions</h3>
+                <p>
+                    Tell us your mood, cravings, or available ingredients, 
+                    and our AI will suggest the perfect meal for you.
+                </p>
+            </div>
+
+            <!-- Feature 2: Community Sharing -->
+            <div class="feature-card">
+                <div class="feature-icon">👥</div>
+                <h3>Food Community</h3>
+                <p>
+                    See what others are cooking, share your own creations, 
+                    and get inspired by diverse culinary experiences.
+                </p>
+            </div>
+
+            <!-- Feature 3: Home-Cooked Meals -->
+            <div class="feature-card">
+                <div class="feature-icon">🏠</div>
+                <h3>Home-Cooked Meals</h3>
+                <p>
+                    Craving grandma's cooking? Request home-cooked meals 
+                    from talented cooks in your area.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+  <!-- CTA-->
+    <section class="cta-section">
+        <h2>Ready to Transform Your Meals?</h2>
+        <p>Start discovering delicious possibilities today!</p>
+        <a href="/ask_page" class="btn btn-primary">Get Started</a>
+    </section>
 
 {% endblock %}
