@@ -26,6 +26,10 @@ def community():
 # Request a Home-Cooked Meal (Optional)
 
 # About / Contact (Optional)
+@app.route("/about")
+def about():
+    return render_template("about.html")
+
 
 
 if __name__ == "__main__":
