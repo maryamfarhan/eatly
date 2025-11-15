@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+
+{% block title %}Eatly - The Meal Mood Matcher{% endblock %}
+ 
+{% block content %}
+    <section class="hero">
+
+        <h1>The Meal Mood Matcher</h1>
+        <!-- Tagline/description -->
+        <p class="tagline">
+            Your personal meal matchmaker. Your ingredients, your mood—transformed into nourishing meals.
+        </p>
+    </section>
+    <section class="features">
+        <!-- Feature Section-->
+        <div class="hero-content">
+            <h2>Tell Us Your Cravings!</h2>
+            <h4 class="form-tagline">
+                Eatly can help suggest snacks, meals, and recipes based on what you want through our quiz below.
+            </h4>
+
+            <form class="form-group">
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Are you craving anything right now?</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Sweet, salty, savory, spicy, Japanese, Italian, comfort food, etc">
+                </div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">What ingredients do you already have available?</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="You can leave this blank if you are open to suggestions with any ingredients">
+                </div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Do you have any dietary preferences or lifestyle choices?</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="i.e. vegan, vegetarian, keto, high-protein, balanced, etc.">
+                </div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Any allergies or foods to avoid?</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Optional. No meal plan should be a surprise attack!">
+                </div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">How much time do you want to spend cooking?</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="10 min, 20–30, 45+, meal-prep, or I barely want to chop an onion.">
+                </div>
+            </form>
+            
+            <div class="cta-buttons">
+                <a href="/recommendations" class="btn btn-primary">Transform My Meal!</a>
+            </div>
+            
+            <h4 class="form-tagline">OR</h4>
+            <h3 class="form-title">Optional Customization</h3>
+            <h4 class="form-tagline">
+                Your answers to these questions will help Eatly customize your recommendations further.
+            </h4>
+            <form class="form-group">
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Are there any cuisines you especially love?</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Mexican, Mediterranean, East Asian, etc.">
+                </div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Are there any cuisines or ingredients you dislike?</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Optional">
+                </div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">What kitchen tools do you have?</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Air fryer, blender, instant pot, oven, microwave—this massively affects recipe suggestions.">
+                </div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">How many meals are you planning for?</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Single meal, today’s meals, full week plan.">
+                </div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">How "creative" should the suggestions be?</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Classic, moderately creative, or “surprise me, but don’t terrify me.”">
+                </div>
+            </form>
+        </div>
+    </section>
+
+  <!-- CTA-->
+    <section class="cta-section">
+        <h2>Let's Eat!</h2>
+        <a href="/recommendations" class="btn btn-primary">Transform My Meal!</a>
+    </section>
+{% endblock %}
