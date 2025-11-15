@@ -13,9 +13,19 @@ def ask_page():
     return render_template("ask_page.html")
 
 # Community / Feed Page
+@app.route("/community")  # When user visits /community
+def community():
+
+    return render_template("community.html")
+
 
 # Request a Home-Cooked Meal (Optional)
 
 # About / Contact (Optional)
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
+
 
 
