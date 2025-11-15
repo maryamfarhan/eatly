@@ -184,6 +184,10 @@ body {
     justify-content: center;
 }
 
+#questionnaire_button {
+    margin-top: 2rem;
+}
+
 .btn-primary:hover {
     background-color: var(--dark-olive) !important;
     color: var(--white) !important;
@@ -228,7 +232,22 @@ body {
 }
 
 .features h2 {
-    margin-bottom: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.feature-recipe, .features ul {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.features h4 {
+    margin-top: 2rem;
+}
+
+.features h5 {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
 }
 
 .feature-grid {
@@ -291,6 +310,15 @@ body {
     opacity: 0.8;
     line-height: 1.8;
     font-size: 1rem;
+}
+
+/* FEATURE LINKS */
+.features ol li a {
+    color: var(--olive);
+}
+
+.features ol li a:hover {
+    color: var(--sage);
 }
 
 /* CTA SECTION */
